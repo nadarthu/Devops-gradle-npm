@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="node_modules/plotly.js-dist/plotly.js"></script>
+</head>
+
+<body>
+
+<div id="chart"></div>
+
+<script>
+
+var trace = {
+  x: ["Mon","Tue","Wed","Thu","Fri"],
+  y: [12, 19, 3, 5, 10],
+  type: "scatter"
+};
+
+var data = [trace];
+
+Plotly.newPlot('chart', data);
+
+</script>
+
+</body>
+</html>
